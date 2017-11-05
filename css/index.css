@@ -1,0 +1,123 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.bg .content {
+    position: relative;
+    top: 35%;
+    width: 100%;
+}
+
+.bg .content h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.bg .content h4 {
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+.bg .content i {
+    font-size: 20px;
+}
+
+.bg:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg .header-topbar {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg .header-topbar>.container {
+    padding-right: 0;
+}
+
+.bg .header-topbar .container>ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.bg .header-topbar .container>ul>li {
+    float: right;
+    list-style: none;
+}
+
+.bg .header-topbar .container .pull-left>li>a {
+    padding: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg .header-topbar .container .pull-right .dropdown-menu {
+    margin: 0;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: none;
+}
+
+.bg .header-topbar .container .pull-right .dropdown-menu>li>a {
+    color: #fff;
+    font-size: 13px;
+    padding: 3px 15px;
+}
+
+.bg .header-topbar .container .pull-right .dropdown-menu>li>a:hover {
+    color: #00ff83;
+    background-color: transparent;
+}
+
+.bg .header-topbar .container>ul>li>a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    font-size: 13px;
+}
+
+.bg .header-topbar .container ul li a i {
+    width: 20px;
+    text-align: center;
+}
+
+.bg .header-topbar .container>ul>li>a:hover,
+.bg .header-topbar .container>ul>li>a:focus {
+    color: #00ff83;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.bg .header-topbar ul>li>span.rot {
+    color: #fff;
+    padding: 9px 0;
+    display: block;
+}
