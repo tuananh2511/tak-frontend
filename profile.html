@@ -94,6 +94,161 @@
         </nav>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modalMyInfo" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Thông tin cá nhân</h4>
+                </div>
+                <form action="" method="">
+                    <div class="modal-body" style="padding-top: 30px;">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="email">Tên hiển thị:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="email" placeholder="" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Họ và tên:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="pwd" placeholder="" name="pwd">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Email:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="pwd" placeholder="" name="pwd">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">&nbsp;<i class="fa fa-check" aria-hidden="true"></i> Xác nhận&nbsp;</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalChangePassword" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Đổi mật khẩu</h4>
+                </div>
+                <form action="" method="">
+                    <div class="modal-body" style="padding-top: 30px;">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="email">Nhập mật khẩu cũ:</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="oldPassword" placeholder="" name="oldPassword">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Nhập mật khẩu mới:</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="newPassword1" placeholder="" name="newPassword1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="pwd">Nhập lại mật khẩu mới:</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="newPassword2" placeholder="" name="newPassword2">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">&nbsp;<i class="fa fa-check" aria-hidden="true"></i> Xác nhận&nbsp;</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Hủy bỏ</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="" class="container">
+        <!-- LEFT SIDE -->
+        <div class="col-xs-12 col-sm-3 col-md-3 profile-side">
+            <div class="profile-img">
+                <img src="images/avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="">
+                            <i class="fa fa-camera-retro" aria-hidden="true"></i>Cập nhật ảnh đại diện
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-xs-12 col-sm-9 col-md-9 tab-menu">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#dashboard">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#activities">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i> Hoạt động
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#manage-post">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i> Quản lý bài đăng
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#save-link">
+                        <i class="fa fa-link" aria-hidden="true"></i> Link đã lưu
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div id="dashboard" class="tab-pane fade in active">
+                    <div class="col-xs-12 col-sm-12 col-md-12 label-dashboard">
+                        <h1>Dashboard</h1>
+
+                    </div>
+                </div>
+
+                <div id="activities" class="tab-pane fade">
+                    <div class="col-xs-12 col-sm-12 col-md-12 label-activities">
+                        <h1>Activities</h1>
+                    </div>
+                </div>
+
+                <div id="manage-post" class="tab-pane fade">
+                    <div class="col-xs-12 col-sm-12 col-md-12 label-manage-post">
+                        <h1>Manage</h1>
+                    </div>
+                </div>
+
+                <div id="save-link" class="tab-pane fade">
+                    <div class="col-xs-12 col-sm-12 col-md-12 label-save-link">
+                        <h1>Save-link</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

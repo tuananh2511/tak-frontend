@@ -47,6 +47,9 @@ html {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%);
 }
 
+
+/*  TOP MENU  */
+
 #cover .header-topbar {
     top: 0;
     right: 0;
@@ -236,4 +239,145 @@ html {
     .modal-dialog {
         margin-top: 10%;
     }
+}
+
+
+/*============== LEFT SIDE ================*/
+
+
+/* IMAGE */
+
+.profile-side .profile-img .image {
+    width: 100%;
+    max-width: 262px;
+    height: 262px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    display: block;
+    margin-top: -191px;
+    margin-bottom: 30px;
+}
+
+.profile-side .profile-img {
+    position: relative;
+}
+
+.profile-side .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.733);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 0 0 4px 4px;
+}
+
+.profile-side .profile-img:hover .overlay {
+    height: 27%;
+}
+
+.profile-side .text {
+    white-space: nowrap;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.profile-side .text a {
+    color: #fff;
+}
+
+.profile-side .text a:hover {
+    text-decoration: none;
+}
+
+.profile-side .text a i {
+    width: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.profile-side hr {
+    border-top: 1px solid #e0e0e0;
+}
+
+.profile-side button {
+    padding: 3px 10px 5px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    color: #fff;
+    border: transparent;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.profile-side button:hover i:before {
+    content: "Cập nhật ảnh đại diện \f030";
+}
+
+.profile-side button:hover,
+.profile-side button:focus {
+    background-color: rgba(0, 0, 0, 0.589);
+    outline: transparent;
+}
+
+
+/*============== RIGHT SIDE ================*/
+
+.tab-menu {
+    padding-top: 30px;
+}
+
+.tab-menu .my-profile {
+    font-size: 80px;
+    margin-top: -171px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: -12px;
+    line-height: 1.05;
+    letter-spacing: 5px;
+}
+
+.tab-menu .my-profile span {
+    font-size: 160px;
+}
+
+.tab-menu .nav>li>a {
+    font-size: 15px;
+    padding: 10px 15px;
+    color: #363636;
+}
+
+.tab-menu .nav-tabs {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.tab-menu .nav-tabs>li>a:hover {
+    border-color: #c3c3c3;
+}
+
+.tab-menu .nav>li>a>i {
+    width: 20px;
+}
+
+.tab-menu .nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: #00bd61;
+    background-color: #fff;
+    border: 1px solid #c3c3c3;
+    border-bottom-color: transparent;
 }
